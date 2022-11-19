@@ -1,0 +1,40 @@
+body { font: 14px; color: #444; background: #f4f4f4; font-family: sans-serif;}
+a { text-decoration: none; color: #008080; }
+p  { margin: 0 0 20px; }
+.wrap { margin: 0 auto; width: 960px; }
+
+#header { height: 267px; background: #080808 url(../src/img/1233.jpg) no-repeat center top; color: #ccc; margin: 0 0 30px; vertical-align: bottom;position:relative}
+#header p { float: right; margin: 20px 0 0; vertical-align: bottom;}
+
+#logo { float: left; margin: 40px 20px 50px 0; color: #fff; letter-spacing: 2px; font-size: 22px; }
+#logo a { color: #fff; }
+
+h1 { font-size: 30px; text-shadow: 1px 1px 1px #000; }
+h2 { font-size: 24px; text-shadow: 1px 1px 1px #fff; margin: 0 0 10px; color: #008080; }
+h3 { font-size: 20px; margin: 0 0 6px; }
+
+#menu { clear: both; padding: 130px 0 0;position: absolute;bottom:0}
+#menu li { display: inline; font-size: 14px; }
+#menu li a { float: left; padding: 0 14px 0 0; margin: 0 14px 0 0; color: royalblue; border-right: 1px solid #505052; }
+#menu li.last a { border: 0; padding: 0; }
+
+
+#main { clear: left; float: left; width: 800px; } 
+.l { float: left; width: 100px; }
+.r { float: right; width: 600px; margin: 0px; white-space; text-align:justify}
+.l img, .r img { float: center; margin: 0 13px 5px 0; border: 2px solid #fff; width:400px; height:auto; }
+
+#side { float: right; width: 250px; color: #808080; background: #fff; padding: 11px; margin: 0 0 20px; }
+#side a { color: #008080; }
+#side li { padding: 0 0 10px; }
+	
+#footer { clear: both; height: 120px; padding: 20px 0; color: #888; border-top: 1px dotted #ccc; }
+#footer ul { float: left; width: 140px; }
+#footer ul li { padding: 0 0 3px; }
+#footer p { float: right; width: 200px; text-align: right; }
+
+.category-wrap {padding: 15px;background: white; width: 150px; box-shadow: 2px 2px 8px #bbb;height:390px;}
+.category-wrap ul { list-style: none;  margin: 0;  padding: 0;   border-top: 1px solid #666;width: 150px;height:325px;position: absolute;overflow-y: scroll;}
+.category-wrap li {margin: 12px 0 0 0px;}
+.category-wrap a {  text-decoration: none;  display: block;    font-size: 13px;  color: #666;  padding: 5px;}
+.category-wrap a:hover { background: #80C8A0;  color: white;}

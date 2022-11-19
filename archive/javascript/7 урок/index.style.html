@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		function Night()
+	{
+	document.body.style.backgroundColor="black";
+	document.body.style.color = "white";
+	}
+	</script>
+	<script type="text/javascript">
+		function Day()
+	{
+	document.body.style.backgroundColor="white";
+	document.body.style.color = "black";
+	}
+	</script>
+	<script type="text/javascript">
+		function text_right()
+	{
+	elem.align="right";
+	}
+	</script>
+	<script type="text/javascript">
+		function text_left()
+	{
+	elem.align="left";
+	}
+	</script>
+
+	<script type="text/javascript">
+		function text_center()
+	{
+	elem.align="center";
+	}
+	</script>
+	<script type="text/javascript">
+		function marker()
+	{
+	elem.style.border="2px solid #0C0C0C";
+
+	}
+	</script>
+
+</head>
+
+<body>
+<input type="button" onclick="Night()"
+value="Ночь" />
+<input type="button" onclick="Day()"
+value="День" />
+<input type="button" onclick="text_right()"
+value="Вправо" />
+<input type="button" onclick="text_left()"
+value="Влево" />
+<input type="button" onclick="text_center()"
+value="по центру" />
+<input type="button" onclick="marker()"
+value="зеркало" />
+<div align="center" id ="elem" >
+	<p id = "part1"> Это текст </p>
+</div>
+
+</body>
+</html> 

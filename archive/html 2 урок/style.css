@@ -1,0 +1,53 @@
+.squere {
+	width: 100px;
+	height: 100px;
+	margin: 20px auto;
+	background-color:#D53BF7;
+	animation-name: spin;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+@keyframes spin {
+  0%{
+    transform: rotate(0deg);   
+  }
+35%{
+    background-color: #4AEAFC;
+  }
+100%{
+  transform: rotate(360deg);
+}
+}
+
+.circle{
+	position: absolute;
+	left: 50%;
+	top:70%;
+	width: 130px;
+	height: 130px;
+	border-radius: 75px;
+	background-color: #F7AC55;
+	animation-name: path;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+
+@keyframes path {
+  0%,100% {
+    transform: translate(-150px, -150px);
+  }
+  25% {
+    transform: translate(150px, -150px); 
+  }
+  50% {
+    transform: translate(150px, 150px);
+    background-color: #55F7A4;
+  }
+  75% {
+    transform: translate(-150px, 150px);
+    background-color: #F755EC;
+  }
+}

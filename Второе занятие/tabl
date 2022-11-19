@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Кодология</title>
+    </head>
+    <body>
+        <table border="1">
+            <thead>
+                <th>Понедельник</th><th>Вторник</th><th>Среда</th><th>Четверг</th><th>Пятница</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        1. Русский
+                    </td>
+                    <td>
+                        1. Русский
+                    </td>
+                    <td>
+                        1. Русский
+                    </td>
+                    <td>
+                        1. Русский
+                    </td>
+                    <td>
+                        1. Русский
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
+

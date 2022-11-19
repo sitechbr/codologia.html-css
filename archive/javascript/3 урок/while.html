@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>циклы</title>
+</head>
+
+    
+<body>
+    <script>
+        
+        var my_users = {login1:"pass1",login2:"pass2",login3:"pass3",login4:"pass4",login5:"pass5"};
+        var access = false;
+        while (access == false){
+        var login = prompt ('Input your login');
+        var pass = prompt ('Input your password');
+                if (my_users[login]==pass) {
+            access = true;
+        }
+        else {
+            access = false;
+        }
+        }
+        document.location.href = "http://www.ya.ru";
+    </script>   
+</body>
+</html>

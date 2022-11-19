@@ -1,0 +1,106 @@
+.square{
+	width: 100px;
+  height: 100px;
+  margin: 20px auto;
+  background-color: #D53BF7;
+  animation-name: spin;
+  animation-duration: 3s;
+  animation-iteration-count: infinite; 
+  animation-direction: alternate;
+} 
+.square2{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+  left: 20%;
+  top:30%;
+  background-color: #71F47D;
+  animation-name: transform;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+} 
+
+.square3{
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+  background-color: #D53BF7;
+  animation-name: spin;
+  animation-duration: 3s;
+  animation-iteration-count: infinite; 
+  animation-direction: reverse;
+} 
+
+.square:hover{
+animation-play-state: paused;
+} 
+.square3:hover{
+animation-play-state: paused;
+} 
+
+
+
+@keyframes transform {
+  0%{
+    border-radius: 0 0 0 0;
+      
+  }
+25%{
+    border-radius: 50% 0 0 0;
+  }
+
+50%{
+    border-radius: 50% 50% 0 0;
+  }
+  75%{
+    border-radius: 50% 50% 50% 0;
+  }
+100%{
+  border-radius: 50% 50% 50% 50%;
+}
+}
+
+
+@keyframes spin {
+  0%{
+    transform: rotate(0deg);   
+  }
+35%{
+    background-color: #4AEAFC;
+  }
+100%{
+  transform: rotate(360deg);
+}
+}
+
+.circle{
+position: absolute;
+left: 50%;
+top:70%;
+width: 130px;
+height: 130px;
+border-radius: 75px;
+background-color: #F7AC55;
+animation-name: path;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+}
+
+
+@keyframes path {
+  0%,100% {
+    transform: translate(-150px, -200px);
+  }
+  25% {
+    transform: translate(-150px, 50px); 
+  }
+  50% {
+    transform: translate(-150px, -200px);
+    background-color: #55F7A4;
+  }
+  75% {
+    transform: translate(-150px, 50px);
+    background-color: #F755EC;
+  }
+}

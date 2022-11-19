@@ -1,0 +1,52 @@
+<HTML>
+  <HEAD>
+    <TITLE>Работа с текстовыми полями</TITLE>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+    <SCRIPT>
+       function Pluss()
+    {     
+          var a = parseInt (Sel.a.value);
+          var b = parseInt (Sel.b.value);
+          alert( a+b);      
+    }
+        function Minis()
+    {     
+          var a = parseInt (Sel.a.value);
+          var b = parseInt (Sel.b.value);
+          alert( a-b);      
+    }
+        function Umn()
+    {     
+          var a = parseInt (Sel.a.value);
+          var b = parseInt (Sel.b.value);
+          alert( a*b);      
+    }
+        function Del()
+    {     
+          var a = parseInt (Sel.a.value);
+          var b = parseInt (Sel.b.value);
+          alert( a/b);      
+    }
+    </SCRIPT>
+  </HEAD>
+  <BODY BGCOLOR=white>
+    <H1>Заполните анкету</H1>
+    <FORM NAME="Sel">
+      <B>a=</B><INPUT TYPE="text" 
+        NAME="a" SIZE="10">
+      <B>b=</B><INPUT TYPE="text" 
+        NAME="b" SIZE="10">
+      
+      <P>
+        <INPUT TYPE="button" VALUE="+"
+        onClick="Pluss();">
+        <INPUT TYPE="button" VALUE="-"
+        onClick="Minis();">
+        <INPUT TYPE="button" VALUE="*"
+        onClick="Umn();">
+        <INPUT TYPE="button" VALUE="/"
+        onClick="Del();">
+        <INPUT TYPE="reset" VALUE="Reset">
+    </FORM>
+  </BODY>
+</HTML>

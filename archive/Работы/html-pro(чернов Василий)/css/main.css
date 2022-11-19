@@ -1,0 +1,102 @@
+body { 
+    font: 14px; 
+    color: #f4f4f4;
+    background: black; 
+    font-family: sans-serif;}
+
+a { text-decoration:none; 
+    color: #58ff00; }
+p  { margin: 0 0 15px; }
+.wrap { margin: 15px auto;
+    width: 960px; }
+body { 
+     font-family: Arial, sans-serif;  
+    }
+    .letter { 
+     color: red; 
+     font-size: 200%; 
+     font-family: serif; 
+     position: relative; 
+     top: 5px; 
+    }
+#header { height: 160px; 
+    background:  url(../src/img/html%205.jpg) no-repeat center top; 
+    color: white; 
+    margin: 0 0 30px; }
+#header p { float: right;
+    margin: 20px 0 0; }
+
+#logo { float: left; 
+    margin: 40px 20px 50px 0; 
+    color: #fff; 
+    letter-spacing: 2px; 
+    font-size: 22px; }
+#logo a { color: #fff; }
+
+h1 { font-size: 30px;
+    text-shadow:
+        1px 1px 1px #000; }
+h2 { font-size: 24px;
+    text-shadow: 1px 1px 1px #fff;
+    margin: 0 0 10px; color: #008080;
+    text-align: center }
+h3 { font-size: 20px;
+    margin: 0 0 6px; }
+
+#menu { clear: both; 
+    padding: 13px 0 0; }
+#menu li { display: inline;
+    font-size: 14px; }
+#menu li a { float: left; 
+    padding: 0 14px 0 0;
+    margin: 0 14px 0 0; 
+    color: red;
+    border-right: 1px solid #505052; }
+#menu li.last a { border: 0; 
+    padding: 0; }
+
+
+#main { clear: left; 
+    float: left; 
+    width: 690px; } 
+.l { float: left;
+    width: 150px; }
+.r { float: right; 
+    width: 480px; text-align: justify; }
+.l img, .r img { float: left; 
+    margin: 0 13px 5px 0;
+    border: 2px solid #fff; width: 480px}
+
+
+#side { float: right;
+    width: 225px;  }
+
+	
+#footer { clear: both; 
+    height: 120px; 
+    padding: 20px 0;
+    color: #888; 
+    border-top: 1px dotted #ccc; }
+#footer p { float: right;
+    width: 400px;
+    text-align: right; }
+
+.category-wrap {
+    padding: 15px;
+    background: black; 
+    width: 150px; 
+    box-shadow: 2px 2px 8px #393131;}
+.category-wrap ul { list-style: none; 
+    margin: 0; 
+    padding: 0; 
+    border-top: 1px solid #666;}
+.category-wrap li {
+    margin: 12px 0 0 0px;}
+.category-wrap a {  
+    text-decoration: none;
+    display: block; 
+    font-size: 13px; 
+    color: #a8a8a8; 
+    padding: 5px;}
+.category-wrap a:hover { background: green; 
+    color: white;}

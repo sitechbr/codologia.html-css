@@ -1,0 +1,145 @@
+ <!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  
+    <title>Codologia</title>
+
+    <script language="javascript">
+	function WriteToFile()
+	{
+		var fso, s, text;
+		var fso = new ActiveXObject('Scripting.FileSystemObject');
+		var s = fso.CreateTextFile("\\\\BLABLA\\site\\1test.txt", true);
+		var text=document.getElementById("TextArea1").innerText;
+		s.WriteLine(text);
+		s.WriteLine('***********************');
+		s.Close();
+	}
+	</script>
+  </head>
+  
+
+  <body>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  
+
+
+   <nav class="navbar navbar-expand-sm navbar-default">
+  <!-- Brand/logo -->
+  <a class="navbar-brand" href="#">Codologia</a>
+  
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#">Сыктывкар</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Эжва</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Москва</a>
+    </li>
+	</ul>
+    <ul class="nav navbar-nav ml-auto w-100 justify-content-end">	
+    <li class="nav-item">
+       <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">Записаться</button>
+    </li>
+  </ul>
+</nav>
+
+
+
+
+	<div class="jumbotron jumbotron-fluid" style="height:250px" >
+       	<div class = "row">
+          <div class = "col-md-3">
+            <img class="img-responsive" src="img/cod.png" alt="Codologia" style="width:100%" align="left"> 
+          </div>
+          <div class = "col-md-6">
+            <h1 align="center">Codologia</h1>
+            <p align="center">Codologia is the most popular</p>
+          </div>
+          <div class = "col-md-3">
+          </div>
+     
+        </div>
+    </div>
+
+
+
+
+     <div class = "row">
+     	<div class = "col-md-2">
+           <div class="list-group">
+            <a href="index_my.html" class="list-group-item list-group-item-action">Главная</a>
+              <a href="contact.html" class="list-group-item list-group-item-action">Контакты</a>
+              <a href="info.html" class="list-group-item list-group-item-action">О нас</a>
+			</div> 
+      </div>
+
+      <div class = "col-md-6">
+        <p>Веб-разработчики создают и обслуживают сайты, порталы. Они верстают пользовательские интерфейсы веб-ресурсов, проектируют серверную часть, которая обеспечивает работу всех функций и хранение данных.</p>
+          <p>Согласно исследованию StackOverflow, это — самая популярная IT-профессия 2017 года. Тем не менее вакансий для web-разработчиков больше, чем квалифицированных кадров, поэтому специалисту легко найти подходящий проект.</p>
+      </div>
+
+      <div class = "col-md-3">
+        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">Записаться</button>
+
+
+      </div>
+    </div>
+
+
+  
+
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title"> Введите ваши данные</h4>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+  			<form action="http://cod17.ru/mail.php" method="post">
+  			
+  				<div class="form-group">
+  					<label for="Surname">Ваше имя:</label>
+  					<input type="Surname" class="form-control" id="surname" placeholder="Enter Surname" name="surname">
+  				</div>
+  				<div class="form-group">
+  				 	<label for="tel">tel:</label>
+  				 	<input type="tel" class="form-control" id="tel" placeholder="Enter tel" name="tel">
+  				</div>
+  			
+  				<button type="submit" class="btn btn-primary">Записаться</button>
+  			</form>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+  </body>
+</html>

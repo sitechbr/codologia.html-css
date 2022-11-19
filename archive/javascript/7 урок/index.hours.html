@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		function Night()
+	{
+	document.body.style.backgroundColor="black";
+	document.body.style.color = "white";
+	}
+	</script>
+	<script type="text/javascript">
+		function Day()
+	{
+	document.body.style.backgroundColor="white";
+	document.body.style.color = "black";
+	}
+	</script>
+
+</head>
+
+<body>
+<script>
+		var now = new Date();
+		if (now.getHours() > 19) {
+			Night();
+		}
+		else 
+		{
+			Day()
+		}
+</script>
+<div align="center">
+	<p> Это текст </p>
+</div>
+
+</body>
+</html> 
