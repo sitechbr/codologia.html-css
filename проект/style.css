@@ -33,6 +33,48 @@ body {
     color: #FFFFFF;
 }
 
+.container {
+    position: relative;
+    width: 1010px;
+    height: 825px;
+    margin:auto;
+}
+
+.container__menu {
+    background-image: url("img/Body.png");
+    float: left;
+    height: 825px;
+    width: 245px;
+}
+
+.container__menu a {
+    display:block;
+    margin: 20px 20px 40px 30px;
+}
+
+.container__content {
+    background-image: url("img/Body.png");
+    float:right;
+    height:825px;
+    width: 755px;
+    position:relative;
+    background-blend-mode: overlay;
+}
+
+.container__content p {
+    margin:20px 20px 20px 10px;
+    font-family: 'Jura';
+    font-size: 25px;
+    text-align: justify;
+
+}
+
+.container__content img{ 
+    display:block; 
+    margin:auto;
+}
+
+
 
 
 
